@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const port = 3000;
+const port = 3200;
 const mongoose = require('mongoose');
 const ejsMate = require('ejs-mate');
 const session = require('express-session');
@@ -23,7 +23,7 @@ main().catch(err => {
 
 async function main() {
     await mongoose.connect('mongodb://127.0.0.1:27017/yelp-camp');
-    // console.log('MONGO Connection successful!');
+    console.log('MONGO Connection successful!');
   // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
 }
 
