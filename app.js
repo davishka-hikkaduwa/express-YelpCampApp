@@ -1,3 +1,9 @@
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+}
+
+console.log(process.env.SECRET);
+
 const express = require('express');
 const path = require('path');
 const port = 3200;
@@ -15,6 +21,7 @@ const User = require('./models/user');
 const userRoutes = require('./routes/users');
 const campgroundRoutes = require('./routes/campgrounds');
 const reviewRoutes = require('./routes/reviews');
+const { log } = require('console');
 
 main().catch(err => {
     console.log('Connection failed!');
