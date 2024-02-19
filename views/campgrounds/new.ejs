@@ -23,7 +23,7 @@
                     Please insert a location.
                 </div>
             </div>
-            <input type="file" name="image" id="" multiple>
+            <!-- <input type="file" name="image" id="" multiple> -->
             <!-- <div class="mb-3">
                 <label class="form-label" for="image">Image Url</label>
                 <input class="form-control" type="text" name="campground[image]" id="image" required>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </div>
-                <div class="mb-3">
+            <div class="mb-3">
                 <label class="form-label" for="description">Description</label>
                 <textarea class="form-control" type="text" name="campground[description]" id="description" required></textarea>
                 <div class="valid-feedback">
@@ -57,7 +57,19 @@
                     Please insert a description.
                 </div>
             </div>
-            <button class="btn btn-success" type="submit">Add Campground</button>
+            <div class="mb-3">
+                <label for="image" class="form-label">Choose image(s)</label>
+                <input class="form-control" type="file" id="image" name="image" multiple>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please select image(s).
+                </div>
+            </div>
+            <div class="pt-3">
+                <button class="btn btn-success" type="submit">Add Campground</button>
+            </div>
         </form>
         <a href="/campgrounds">All Campgrounds</a>
     </div>
