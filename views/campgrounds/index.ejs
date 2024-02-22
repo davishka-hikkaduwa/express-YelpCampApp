@@ -13,12 +13,14 @@
 		<div class="col-md-4 my-auto">
 			<% if (campground.images.length) { %>
 			<img
+				crossorigin="anonymous"
 				class="img-fluid"
 				src="<%= campground.images[0].url %>"
 				alt=""
 			/>
 			<% } else { %>
 			<img
+				crossorigin="anonymous"
 				class="img-fluid"
 				src="https://res.cloudinary.com/dxxtkych7/image/upload/v1708346608/YelpCamp/p43bjecjeinmnct6ypmn.jpg"
 				alt=""
